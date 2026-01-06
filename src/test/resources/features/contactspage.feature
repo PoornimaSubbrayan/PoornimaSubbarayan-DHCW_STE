@@ -14,7 +14,7 @@ And the submitted message is "Test123!@#"
 
 
   @contacts
-  Scenario Outline: User lands on Automation Panda home page and navigates to Contacts page
+  Scenario Outline: User lands on Automation Panda home page and navigates to Contacts page to fill and submit the contact form
     Given I am on the Automation Panda homepage
     When I select the "Contact" button from the navigation menu
     Then the contact page is displayed
