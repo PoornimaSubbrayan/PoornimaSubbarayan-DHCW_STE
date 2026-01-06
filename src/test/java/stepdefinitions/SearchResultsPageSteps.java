@@ -23,7 +23,6 @@ public class SearchResultsPageSteps {
 
     @Given("the user is on the Automation Panda home page")
     public void navigateToPandaHomePage() {
-        //driver.get("https://automationpanda.com/");
         driver.get(reader.get("application_url"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         System.out.println("User is on Automation Panda home page");
