@@ -48,7 +48,7 @@ target/allure-report/ - this folder contains the generated Allure report.
 ---
 
 ## Customization
-- To run specific scenarios, set the `tags` value in `RunCucumberTest.java` (e.g., `tags = "@login"`).
+- To run specific scenarios, set the `tags` value in `RunCucumberTest.java` (e.g., `tags = "@search"`).
 
 ---
 
