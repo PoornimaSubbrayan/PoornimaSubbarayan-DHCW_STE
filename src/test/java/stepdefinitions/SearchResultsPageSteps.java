@@ -34,14 +34,14 @@ public class SearchResultsPageSteps {
         searchResultPageFunctions.enterSearchCriteria(searchCriteria);
     }
 
-    @Then("the user should see the results page with title as Search")
-    public void verifySearchResultsPageTitle() {
-        searchResultPageFunctions.verifySearchResults();
-    }
-
     @And("the user should see the search results containing {string}")
     public void verifySearchResultsContentStep(String searchResult) {
         searchResultPageFunctions.verifySearchResultsContent(searchResult);
+    }
+
+    @Then("the user should see the results page with title as Search")
+    public void verifySearchResultsPageTitle() {
+        searchResultPageFunctions.verifySearchResults();
     }
 
 }
