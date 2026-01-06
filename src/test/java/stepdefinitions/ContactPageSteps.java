@@ -4,8 +4,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
-import org.openqa.selenium.By;
 import pages.ContactsPageFunctions;
 
 import java.time.Duration;
@@ -19,7 +17,6 @@ public class ContactPageSteps {
 
     @Given("I am on the Automation Panda homepage")
     public void navigateToPandaHomePage() {
-        //driver.get("https://automationpanda.com/");
         driver.get(reader.get("application_url"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         System.out.println("User is on Automation Panda home page");
@@ -35,7 +32,6 @@ public class ContactPageSteps {
         contactsPageFunctions.enterName(name);
     }
 
-
     @And("I enter {string} into the email field")
     public void enterValueOnEmailField(String email) {
         contactsPageFunctions.enterEmail(email);
@@ -50,7 +46,6 @@ public class ContactPageSteps {
     public void contactFormSubmission() {
         contactsPageFunctions.submitContactForm();
     }
-
 
     @And("the submitted name is {string}")
     public void submittedNameVerification(String expectedName) {

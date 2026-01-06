@@ -1,7 +1,6 @@
 package pages;
 
 import org.junit.Assert;
-import org.openqa.selenium.BuildInfo;
 import org.openqa.selenium.By;
 import utility.ScreenshotUtil;
 import utility.UiInteractables;
